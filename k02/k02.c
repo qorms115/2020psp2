@@ -12,6 +12,8 @@ int main(void)
     char buf[256];
     FILE* fp;
     double L1=1,L2=1;
+    double mu_a= ,sigma_a= ;
+    double mu_b= ,sigma_b= ;
 
     printf("input the filename of sample:");
     fgets(fname,sizeof(fname),stdin);
@@ -51,4 +53,8 @@ double p_stdnorm(double z)
 {
     return 1/sqrt(2*M_PI) * exp(-z*z/2);
 }
+
+
+
+
 

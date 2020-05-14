@@ -55,8 +55,8 @@ int main(void)
 
     printf("Avrage is %lf\n",ave);
     printf("Variance is %lf\n",var);
-    printf("Calculation Avrage is %lf\n",ave);
-    printf("Calculation variance is %lf\n",var2);
+    printf("Expeted Avrage is %lf\n",ave);
+    printf("Expeted variance is %lf\n",var2);
 
     return 0;
 
