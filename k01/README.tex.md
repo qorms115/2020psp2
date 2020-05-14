@@ -67,14 +67,11 @@ var（分散）の値を導出する式を完成する。
 
 ## 入出力結果
 
-```
-input the filename of sample:../sample/heights_male.csv
-the filename of sample: ../sample/heights_male.csv
-sample mean：
-sample variance：
-population mean (estimated)：
-population variance (estimated)：
-```
+the filename of sample: heights_male.csv
+Avrage is 173.89
+Variance is 25.36
+Expeted Avrage is 173.89
+Expeted variance is 28.98
 
 ## 修正履歴
 
