@@ -53,10 +53,10 @@ int main(void)
     }
 
 
-    printf("Avrage is %lf\n",ave);
-    printf("Variance is %lf\n",var);
-    printf("Expeted Avrage is %lf\n",ave);
-    printf("Expeted variance is %lf\n",var2);
+    printf("Avrage is %5.2lf\n",ave);
+    printf("Variance is %5.2lf\n",var);
+    printf("Expeted Avrage is %5.2lf\n",ave);
+    printf("Expeted variance is %5.2lf\n",var2);
 
     return 0;
 
