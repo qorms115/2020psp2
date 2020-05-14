@@ -63,16 +63,19 @@ var（分散）の値を導出する式を完成する。
 
 56 to59、平均、分散、母平均の推定平均、母平均の推定分散をそれぞれ出力する。
 
-あいうえお
-
 ## 入出力結果
 
+```
 the filename of sample: heights_male.csv
 Avrage is 173.89
 Variance is 25.36
 Expeted Avrage is 173.89
 Expeted variance is 28.98
+```
 
 ## 修正履歴
 
-説明は「かきくけこ」だ！
+[comment #20200514]
+- [k01.c#L8] 最後の引数の`count`のtypeをdoubleにしていますが， counter　なのでinteger以外にはなりません．(int)/(int)の演算があると問題ですが，演算の順番を変えるなどすれば`count`をintにできませんか？
+- [k01.c#L13] 最後の引数の`var`は使われていないので不要ではないでしょうか？
+- この[README.tex.md#L58]にある　ソースコード43行目の説明が何かおかしいです（笑）
