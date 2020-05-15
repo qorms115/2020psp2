@@ -10,7 +10,8 @@ double ave_online(double val,double ave,double count){
     return ave;    
     }
     
-double var_online(double ave,double ave2,double var){
+double var_online(double ave,double ave2){
+    double var = 0 ;
     var = ave2 - pow(ave,2);
     return var;
 }
@@ -20,7 +21,6 @@ int main(void)
     double val,val2 = 0;
     double ave,ave2 = 0;
     double var,var2 = 0;
-    double count = 1;
     char fname[FILENAME_MAX];
     char buf[256];
     FILE* fp;
@@ -36,12 +36,14 @@ int main(void)
         exit(EXIT_FAILURE);
     }
 
+     int count = 1;
+
     while(fgets(buf,sizeof(buf),fp) != NULL){
         sscanf(buf,"%lf",&val);
         ave = ave_online(val,ave,count);
         val2 = pow(val,2);
         ave2 = ave_online(val2,ave2,count);
-        var = var_online(ave,ave2,var);
+        var = var_online(ave,ave2);
         count = count + 1 ;
     }
     
