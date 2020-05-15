@@ -12,8 +12,9 @@ int main(void)
     char buf[256];
     FILE* fp;
     double L1=1,L2=1;
-    double mu_a= ,sigma_a= ;
-    double mu_b= ,sigma_b= ;
+    double mu_a= 170.8,sigma_a=5.43 ;
+    double mu_b=169.7,sigma_b=5.5 ;
+    double y_a = 0 ,y_b = 0 ;
 
     printf("input the filename of sample:");
     fgets(fname,sizeof(fname),stdin);
@@ -29,10 +30,14 @@ int main(void)
     while(fgets(buf,sizeof(buf),fp) != NULL){
         sscanf(buf,"%lf",&val);
 
+    y_a = (val-mu_a) / sigma_a ;
+    y_b = (val-mu_b) / sigma_b ;
 
-    
+    y_a = p_stdnorm(y_a);
+    y_b = p_stdnorm(y_b);
 
-
+    L1 = L1*y_a;
+    L2 = L2*y_b;
 
     }
 
@@ -41,8 +46,8 @@ int main(void)
         exit(EXIT_FAILURE);
     }
 
-    printf("L_A: %f\n",max_val);
-    printf("L_B: %f\n",min_val);
+    printf("L_A: %f\n",L1);
+    printf("L_B: %f\n",L2);
 
     return 0;
 
@@ -53,8 +58,3 @@ double p_stdnorm(double z)
 {
     return 1/sqrt(2*M_PI) * exp(-z*z/2);
 }
-
-
-
-
-
