@@ -37,7 +37,7 @@ int main(void)
     y_b = p_stdnorm(y_b);
 
     L1 = L1*y_a;
-    L2 = L2*y_b;
+    L2 = L2*y_b;33
 
     }
 
