@@ -54,7 +54,6 @@ int main(void)
         exit(EXIT_FAILURE);
     }
 
-
     printf("Avrage is %5.2lf\n",ave);
     printf("Variance is %5.2lf\n",var);
     printf("Expeted Avrage is %5.2lf\n",ave);
