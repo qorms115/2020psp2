@@ -82,3 +82,6 @@ Expeted variance is 28.98
 - [k01.c#L8] 最後の引数の`count`のtypeをdoubleにしていますが， counter　なのでinteger以外にはなりません．(int)/(int)の演算があると問題ですが，演算の順番を変えるなどすれば`count`をintにできませんか？
 - [k01.c#L13] 最後の引数の`var`は使われていないので不要ではないでしょうか？
 - この[README.tex.md#L58]にある　ソースコード43行目の説明が何かおかしいです（笑）
+
+[comment #20200521]
+- 課題１完了．

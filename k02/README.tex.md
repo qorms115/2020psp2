@@ -44,3 +44,25 @@ L_B: 0.000002
 
 ## 修正履歴
 
+[comment #20200521]
+- Readable CodingのTipsとして，
+  - functionの中で，Do not write raw numbersです．代わりに，
+    `#define`を使います．
+  - [k02.c#L15][k02.c#L16]
+  - 例えば， 
+    ```
+    int main()
+    {
+      double mu_a= 170.8;
+    }
+    ```
+    は，raw number 170.8を書いていますが，代わりに
+    ```
+    #define MU_A 170.8
+    int main()
+    {
+      double mu_a = MU_A;
+    }
+    ```
+    と書くことを薦めます．
+    
