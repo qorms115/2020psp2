@@ -4,6 +4,10 @@
 #include <math.h>
 
 extern double p_stdnorm(double z);
+#define MU_A 170.8
+#define MU_B 169.7
+#define SIGMA_A 5.43
+#define SIGMA_B 5.5
 
 int main(void)
 {
@@ -12,8 +16,8 @@ int main(void)
     char buf[256];
     FILE* fp;
     double L1=1,L2=1;
-    double mu_a= 170.8,sigma_a=5.43 ;
-    double mu_b=169.7,sigma_b=5.5 ;
+    double mu_a= MU_A, sigma_a = SIGMA_A ;
+    double mu_b=MU_B,sigma_b = SIGMA_B ;
     double y_a = 0 ,y_b = 0 ;
 
     printf("input the filename of sample:");
