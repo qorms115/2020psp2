@@ -1,6 +1,6 @@
 # 課題3 レポート
 
-aa83988848 薗田光太郎
+bb35317057 PARK BAEGEUN
 
 ## 課題
 
@@ -86,6 +86,17 @@ Num of dummy data: 5
 
 コンパイル時に`-DCONST_SEED`をつけない場合を以下に示す．
 
+C:\Users\PARK BAEGEUN\Desktop\2020psp2\k03>k03 170.8 5.43 5
+============================================
+template mean: 170.8
+template standard deviation: 5.43
+Num of dummy data: 5
+============================================
+167.67
+168.33
+167.13
+162.04
+160.68
 
 
 ## 修正履歴
