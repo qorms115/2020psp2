@@ -44,6 +44,9 @@ L_B: 0.000002
 
 ## 修正履歴
 
+[comment #20200527 moto]
+- OKです。書き方もバッチリです。
+
 [comment #20200521]
 - Readable CodingのTipsとして，
   - functionの中で，Do not write raw numbersです．代わりに，

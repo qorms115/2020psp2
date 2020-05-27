@@ -105,3 +105,5 @@ Num of dummy data: 5
 
 ## 修正履歴
 
+[comment #20200527 moto]
+- OKです。書き方もバッチリです。
