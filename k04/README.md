@@ -18,6 +18,7 @@ bb35317057 PARK BAEGEUN
 
 ## 入出力結果
 データが存在する場合
+```
 input the filename of sample height : heights.csv
 the filename of sample height : heights.csv
 input the filename of sample ID : IDs.csv
@@ -28,9 +29,10 @@ ID : 45313125
 gender : female
 height : 152.40
 ============================
-
+```
 
 データが存在しない場合
+```
 the filename of sample height : heights.csv
 input the filename of sample ID : IDs.csv
 the filename of sample ID : IDs.csv
@@ -38,10 +40,13 @@ Which data do you want? : 45313124
 ================================
 No data
 ============================
-
+```
 
 
 ## 修正履歴
 
 [comment #20200630 moto]
 - OKです。
+
+[comment 20200630 kotaro]
+- 課題4完了確認しました．
